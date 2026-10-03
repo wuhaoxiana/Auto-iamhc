@@ -228,6 +228,7 @@ def main():
             f"💰 昨日余额: {fmt_usd(balance_before)}$\n"
             f"💰 当前余额: {fmt_usd(balance_after)}$\n"
             f"⏱️ 签到时间: {now}\n"
+            f"{BASE_URL}"
         )
 
     elif any(k in msg for k in ("已签到", "重复签到", "今天已签到")):
@@ -240,6 +241,7 @@ def main():
             f"💰 昨日余额: {fmt_usd(balance_before)}$\n"
             f"💰 当前余额: {fmt_usd(balance_after)}$\n"
             f"⏱️ 签到时间: {now}\n"
+            f"{BASE_URL}"
         )
 
     else:
@@ -252,6 +254,7 @@ def main():
             f"💰 昨日余额: {fmt_usd(balance_before)}$\n"
             f"💰 当前余额: {fmt_usd(balance_after)}$\n"
             f"⏱️ 签到时间: {now}\n"
+            f"{BASE_URL}"
         )
 
     send_notification(message)
